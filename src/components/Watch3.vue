@@ -25,8 +25,7 @@
         person.age.realage += 1;
     }
     function changePerson() {
-        person.name = "Charlie";
-        person.age = { fakeage: 20, realage: 40 };
+        Object.assign(person, { name: "Charlie", age: { fakeage: 20, realage: 40 } });
     }
     watch(person, (newVal, oldVal) => {
         console.log(`Person changed from ${JSON.stringify(oldVal)} to ${JSON.stringify(newVal)}`);
