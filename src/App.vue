@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <h1>Hello World</h1>
+    <RefTag />
     <WatchEffect />
     <Watch3 />
     <Watch2 />
@@ -19,6 +20,7 @@
     import Watch2 from './components/Watch2.vue';
     import Watch3 from './components/Watch3.vue';
     import WatchEffect from './components/WatchEffect.vue';
+    import RefTag from './components/RefTag.vue';
 
     export default {
         name: 'App',
@@ -29,7 +31,8 @@
             Watch1,
             Watch2,
             Watch3,
-            WatchEffect
+            WatchEffect,
+            RefTag
         }
     }
 </script>
