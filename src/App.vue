@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <h1>Hello World</h1>
+    <Hooks />
     <Prop a="123" b="456" />
     <TSPerson />
     <RefTag />
@@ -25,6 +26,7 @@
     import RefTag from './components/RefTag.vue';
     import TSPerson from './components/TSPerson.vue';
     import Prop from './components/Prop.vue';
+import Hooks from './components/Hooks.vue';
     export default {
         name: 'App',
         components: {
@@ -37,7 +39,8 @@
             Watch2,
             Watch3,
             WatchEffect,
-            RefTag
+            RefTag,
+            Hooks
         }
     }
 </script>
