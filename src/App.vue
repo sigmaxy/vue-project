@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <h1>Hello World</h1>
+    <Prop a="123" b="456" />
     <TSPerson />
     <RefTag />
     <WatchEffect />
@@ -23,11 +24,13 @@
     import WatchEffect from './components/WatchEffect.vue';
     import RefTag from './components/RefTag.vue';
     import TSPerson from './components/TSPerson.vue';
+    import Prop from './components/Prop.vue';
     export default {
         name: 'App',
         components: {
             Person,
             Car,
+            Prop,
             TSPerson,
             Computed,
             Watch1,
