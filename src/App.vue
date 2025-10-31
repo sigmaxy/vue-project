@@ -1,4 +1,56 @@
 <template>
+    <div id="app">
+        <h2>Vue Route</h2>
+        <div class="navigate">
+            <RouterLink replace to="/home" active-class="active">Home</RouterLink> |
+            <RouterLink replace to="/about" active-class="active">About</RouterLink> |
+            <RouterLink replace to="/news" active-class="active">News</RouterLink> |
+        </div>
+        <div class="main-content">
+            
+            <RouterView />
+        </div>
+    </div>
+</template>
+
+<script lang="ts">
+    export default {
+        name: 'App',
+    };
+</script>
+<script setup lang="ts">
+    import { RouterView, RouterLink } from 'vue-router';
+</script>
+<style scoped>
+    .app {
+        background-color: #ddd;
+        box-shadow: 0 0 10px;
+        border-radius: 10px;
+        padding: 20px;
+    }
+    .navigate {
+        margin-bottom: 20px;
+    }
+    .active {
+        font-weight: bold;
+    }
+    a {
+        text-decoration: none;
+        color: blue;
+    }
+    a:hover {
+        text-decoration: underline;
+    }
+    .main-content {
+        background-color: white;
+        box-shadow: 0 0 10px;
+        border-radius: 10px;
+        padding: 20px;
+    }
+</style>
+
+
+<!-- <template>
   <div id="app">
     <h1>Hello World</h1>
     <Hooks />
@@ -52,4 +104,4 @@ import Hooks from './components/Hooks.vue';
         border-radius: 10px;
         padding: 20px;
     }
-</style>
+</style> -->
